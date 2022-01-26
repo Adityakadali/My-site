@@ -118,7 +118,7 @@ disableHugoGeneratorInject = false
     topText = ["<a href=\"/posts/index.xml\">RSS</a>"]
     bottomText = [
       "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
-      "©2022  &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
+      "©2022  &#10084; by <a href=\"https://opensource.org/\">Open Source Software</a>"
     ]
 
   # Colors for favicons
@@ -153,7 +153,7 @@ disableHugoGeneratorInject = false
   # Uncomment this if you want a portrait on your start page
   #
   # [params.portrait]
-  #   path     = "/img/image.jpg"
+  #   path     = "/image.jpeg"
   #   alt      = "Portrait"
   #   maxWidth = "50px"
 
@@ -194,7 +194,14 @@ disableHugoGeneratorInject = false
     identifier = "about"
     name       = "About"
     url        = "about/"
+    weight = 10
   [[menu.main]]
     identifier = "posts"
     name       = "Posts"
     url        = "posts/"
+    weight = 20
+  [[menu.main]]
+    identifier = "categories"
+    name       = "Categories"
+    url        = "categories/"
+    weight = 30
