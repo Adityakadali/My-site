@@ -8,4 +8,4 @@ aliases = ["about-us","about-hugo","contact"]
 
 Hi my name is  **Aditya Kadali**. This is my personal website powerd by [Hugo](https://www.gohugo.io).
 
-I am currently working as Panchayat Secretary(Gr-VI) in Gramasachivalayam Nandamurugaruvu.
+I am currently working as Panchayat Secretary(Gr-VI).
