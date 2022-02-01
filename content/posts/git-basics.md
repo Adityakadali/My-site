@@ -15,7 +15,7 @@ tags:
 - git
 - coding
 categories:
-- github
+- Github
 
 aliases:
 - /blog/migrate-from-jekyll/
