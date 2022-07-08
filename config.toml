@@ -30,8 +30,8 @@ icon = "twitter"
 url = "https://twitter.com/adityakadali/"
 
 # [[params.social]]
-# name = "GitLab"
-# icon = "gitlab"
+# name = "Instagram"
+# icon = "instagram"
 # url = "https://gitlab.com/"
 
 # Main menu Items
@@ -51,15 +51,15 @@ name = "About"
 url = "/about"
 weight = 3
 
-[[menu.main]]
-name = "Tags"
-url = "/tags"
-weight = 4
+# [[menu.main]]
+# name = "Tags"
+# url = "/tags"
+# weight = 4
 
 [[menu.main]]
 name = "Categories"
 url = "/categories"
-weight = 5
+weight = 4
 
 [permalinks]
   posts = "/posts/:year/:month/:title/"
