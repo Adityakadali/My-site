@@ -30,7 +30,7 @@ url = "https://twitter.com/adityakadali/"
 # [[params.social]]
 # name = "GitLab"
 # icon = "gitlab"
-# url = "https://gitlab.com/athul/"
+# url = "https://gitlab.com/"
 
 # Main menu Items
 
@@ -53,3 +53,17 @@ weight = 3
 name = "Tags"
 url = "/tags"
 weight = 4
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[author]
+  name = "Aditya Kadali"
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
