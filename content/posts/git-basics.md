@@ -33,9 +33,9 @@ GitHub is a service that allows you to upload your code using Git and to manage 
 
 Run these commands in the terminal to update the Linux system:
 
-> sudo apt update
+`sudo apt update`
 
-> sudo apt upgrade
+`sudo apt upgrade`
 
 
 #### Step 1.2: Install git
@@ -44,17 +44,17 @@ It’s likely you have git installed already, but to make sure that we have the
 
 most up to date version of git, run the following commands:
 
-sudo add-apt-repository ppa:git-core/ppa
+`sudo add-apt-repository ppa:git-core/ppa`
 
->sudo apt update
+`sudo apt update`
 
->sudo apt install git
+`sudo apt install git`
 
 #### Step 1.3: Verify version
 
 Make sure your git version is at least 2.28 by running this command:
 
->git --version
+`git --version`
 
 If the version number is less than 2.28, follow the instructions again.
 
@@ -65,23 +65,23 @@ For Git to work properly, we need to let it know who we are so that it can link 
 
 The commands below will configure Git. Be sure to enter your own information inside the quotes (but include the quotation marks)!
 
->git config --global user.name "Your Name"
+`git config --global user.name "Your Name"`
 
->git config --global user.email "yourname@example.com"
+`git config --global user.email "yourname@example.com"`
 
 GitHub recently changed the default branch on new repositories from master to main, change the default branch for Git using this command:
 
->git config --global init.defaultBranch main
+`git config --global init.defaultBranch main`
 
 To enable colorful output with git, type
 
->git config --global color.ui auto
+`git config --global color.ui auto`
 
 To verify things are working properly, enter these commands and verify that the output matches your name and email address.
 
->git config --get user.name
+`git config --get user.name`
 
->git config --get user.email
+`git config --get user.email`
 
 #### Step 2.2: Create a GitHub Account or Sign In
 
@@ -93,7 +93,7 @@ An SSH key is a cryptographically secure identifier. It’s like a really long p
 
 First, we need to see if you have an SSH key already installed. Type this into the terminal:
 
->ls ~/.ssh/id_rsa.pub
+`ls ~/.ssh/id_rsa.pub`
 
 If a message appears in the console containing the text “No such file or directory”, then you do not yet have an SSH key, and you will need to create one. If no message has appeared in the console output, you already have a key and can proceed to step 2.4.
 
@@ -101,7 +101,7 @@ To create a new SSH key, run the following command inside your terminal. The -C 
 
 Note: The angle brackets (< >) in the code snippet below indicate that you should replace that part of the command with the appropriate information. Do not include the brackets themselves in your command. For example, if your email address is odin@theodinproject.com, then you would type ssh-keygen -C odin@theodinproject.com. You will see this convention of using angle brackets to indicate placeholder text used throughout The Odin Project’s curriculum and other coding websites, so it’s good to be familiar with what it means.
 
->ssh-keygen -C <youremail>
+`ssh-keygen -C <youremail>`
 
 When it prompts you for a location to save the generated key, just push Enter.
 Next, it will ask you for a password; enter one if you wish, but it’s not required.
@@ -116,7 +116,7 @@ Next, on the left-hand side, click SSH and GPG keys. Then, click the green butto
 
 Now you need to copy your public SSH key. To do this, we’re going to use a command called cat to read the file to the console. (Note that the .pub file extension is important in this case.)
 
->cat ~/.ssh/id_rsa.pub
+`cat ~/.ssh/id_rsa.pub`
 
 
 Highlight and copy the output, which starts with ssh-rsa and ends with your email address.
@@ -131,19 +131,19 @@ Open Terminal.
 
 Enter the following:
 
-> ssh -T git@github.com
+`ssh -T git@github.com`
 
 Attempts to ssh to GitHub
 
 You may see a warning like this:
-
-> The authenticity of host 'github.com (IP ADDRESS)' can't be established.
-> RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+```
+> The authenticity of host 'github.com (IP ADDRESS)' can't be established.`
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
 > Are you sure you want to continue connecting (yes/no)?
+```
 Verify that the fingerprint in the message you see matches GitHub's RSA public key fingerprint. If it does, then type yes:
 
-> Hi username! You've successfully authenticated, but GitHub does not
-> provide shell access.
+`Hi username! You've successfully authenticated, but GitHub does not provide shell access.`
 
 You may see this error message:
 
