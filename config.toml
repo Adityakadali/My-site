@@ -1,208 +1,55 @@
 baseURL = "https://adityakadali.netlify.app/"
-title   = "~ whoami"
 languageCode = "en-us"
-theme = "archie"
+title = "Aditya"
+theme="archie"
 copyright = "© Aditya"
+# Code Highlight
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
 
-PygmentsCodeFences = true
-PygmentsStyle = "monokai"
-
-paginate  = 3
-rssLimit  = 10  # Maximum number of items in the RSS feed.
-# copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
-
-# googleAnalytics = ""
-# disqusShortname = ""
-
-archetypeDir = "archetypes"
-contentDir   = "content"
-dataDir      = "data"
-layoutDir    = "layouts"
-publishDir   = "public"
-
-buildDrafts  = false
-buildFuture  = false
-buildExpired = false
-canonifyURLs = true
-
-enableRobotsTXT = true
-enableGitInfo   = false
-enableEmoji     = true
-enableMissingTranslationPlaceholders = false
-disableRSS     = false
-disableSitemap = false
-disable404     = false
-disableHugoGeneratorInject = false
-
-[permalinks]
-  posts = "/posts/:year/:month/:title/"
-
-[author]
-  name = "Aditya Kadali"
-
-[blackfriday]
-  hrefTargetBlank = true
-
-[taxonomies]
-  tag      = "tags"
-  category = "categories"
-  series   = "series"
+paginate=3 # articles per page
 
 [params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
+	mode="auto" # color-mode → light,dark,toggle or auto
+	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
+	subtitle = "A Personal blog page for my self reflection"
 
-  # Metadata mostly used in document's head
-  # 
-  description = "Aditya's personal website"
-  keywords = ""
-  images = [""]
+# Social Tags
 
-  # Home subtitle of the index page.
-  #
-  homeSubtitle = "I am Aditya Kadali"
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/adityakadali"
 
-  # Set a background for the homepage
-	#backgroundImage = "back.jpg"
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/adityakadali/"
 
-  # Prefix of link to the git commit detail page. GitInfo must be enabled.
-  #
-  #gitUrl = ""
+# [[params.social]]
+# name = "GitLab"
+# icon = "gitlab"
+# url = "https://gitlab.com/athul/"
 
-  # Set disableReadOtherPosts to true in order to hide the links to other posts.
-  #
-  disableReadOtherPosts = false
+# Main menu Items
 
-  # Enable theme toggle
-  # 
-  # This options enables the theme toggle for the theme. 
-  # Per default, this option is off. 
-  # The theme is respecting the prefers-color-scheme of the operating systeme. 
-  # With this option on, the page user is able to set the scheme he wants. 
-  enableThemeToggle = true
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
 
-  # Sharing buttons
-  #
-  # There are a lot of buttons preconfigured. If you want to change them,
-  # generate the buttons here: https://sharingbuttons.io
-  # and add them into your own `layouts/partials/sharing-buttons.html`
-  #
-  enableSharingButtons = true
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
 
-  # Global language menu
-  #
-  # Enables the global language menu.
-  #
-  enableGlobalLanguageMenu = false
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
 
-  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
-  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
-  #
-  customCSS = []
-  customJS  = []
-
-  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
-  #
-  justifyContent = false  # Set "text-align: justify" to .post-content.
-
-  # Custom footer 
-  # If you want, you can easily override the default footer with your own content. 
-  #
-  [params.footer]
-    trademark = false
-    rss = true
-    copyright = false
-    author = false
-
-    topText = ["<a href=\"/posts/index.xml\">RSS</a>"]
-    bottomText = [
-      "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
-      "©2022  &#10084; by <a href=\"https://opensource.org/\">Open Source Software</a>"
-    ]
-
-  # Colors for favicons
-  #
-  [params.favicon.color]
-    mask = "#1b1c1d"
-    msapplication = "#1b1c1d"
-    theme = "#1b1c1d"
-
-  [params.logo]
-    logoMark     = ">"
-    logoText     = "$ cd /home/"
-    logoHomeLink = "/"
-    # Set true to remove the logo cursor entirely.
-    # logoCursorDisabled = false
-    # Set to a valid CSS color to change the cursor in the logo.
-    # logoCursorColor    = "#67a2c9"
-    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
-    # logoCursorAnimate  = "2s"
-
-  # Commento is more than just a comments widget you can embed — 
-  # it’s a return to the roots of the internet. 
-  # An internet without the tracking and invasions of privacy. 
-  # An internet that is simple and lightweight. 
-  # An internet that is focused on interesting discussions, not ads. 
-  # A better internet.
-  # Uncomment this to enable Commento.
-  #
-  # [params.commento]
-  #   url = ""
-
-  # Uncomment this if you want a portrait on your start page
-  #
-  # [params.portrait]
-  #   path     = "/image.jpeg"
-  #   alt      = "Portrait"
-  #   maxWidth = "50px"
-
-  # Social icons
-  [[params.social]]
-    name = "twitter"
-    url  = "https://twitter.com/adityakadali"
-
-  [[params.social]]
-    name = "email"
-    url  = "mailto:kadaliaditya.7@gmail.com"
-
-  [[params.social]]
-    name = "github"
-    url  = "https://github.com/Adityakadali"
-
- # [[params.social]]
- #   name = "linkedin"
- #   url  = "https://www.linkedin.com/"
-
- # [[params.social]]
- #   name = "stackoverflow"
- #   url  = "https://www.stackoverflow.com/"
-
-[languages]
-  [languages.en]
-    subtitle  = "Aditya Kadali"
-    weight    = 1
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-
-  [languages.fr]
-    subtitle  = "Aditya Kadali"
-    weight    = 2
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "about/"
-    weight = 10
-  [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "posts/"
-    weight = 20
-  [[menu.main]]
-    identifier = "categories"
-    name       = "Categories"
-    url        = "categories/"
-    weight = 30
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
