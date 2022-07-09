@@ -62,7 +62,8 @@ url = "/categories"
 weight = 4
 
 [permalinks]
-  posts = "/posts/:year/:month/:title/"
+  # posts = "/posts/:year/:month/:title/"
+  posts = "/posts/:title/"
 
 [author]
   name = "Aditya Kadali"

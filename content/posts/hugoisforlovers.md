@@ -1,22 +1,23 @@
-+++
-title = "Getting Started with Hugo"
-description = ""
-type = ["posts","post"]
-tags = [
-    "go",
-    "golang",
-    "hugo",
-    "development",
-]
-date = "2022-01-01"
-categories = [
-    "Development",
-    "golang",
-]
-series = ["Hugo 101"]
-[ author ]
-  name = "Hugo Authors"
-+++
+---
+title: Getting Started with Hugo
+description: ''
+type:
+  - posts
+  - post
+tags:
+  - go
+  - golang
+  - hugo
+  - development
+date: '2022-01-01'
+categories:
+  - Development
+  - golang
+series:
+  - Hugo 101
+author:
+  name: Hugo Authors
+---
 
 ## Step 1. Install Hugo
 

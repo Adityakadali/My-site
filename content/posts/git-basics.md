@@ -16,9 +16,6 @@ tags:
 - coding
 categories:
 - Github
-
-aliases:
-- /blog/migrate-from-jekyll/
 ---
 
 # SETTING UP GIT
