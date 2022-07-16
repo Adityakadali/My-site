@@ -1,19 +1,20 @@
 ---
-title: "HTML <img> Tag"
+title: "Images on Web | HTML <img> Tag"
 date: 2022-07-16T19:26:50+05:30
-description: ""
 type:
   - posts
   - post
 tags:
   - HTML
+  - <img> tag
 
 categories:
   - Web Development
 author:
   name: Aditya Kadali
-draft: true
 ---
+
+## Basic usage
 
 On every web page we come across images. Those are placed in HTML using `<img>` tags.
 It is a self closing tag.
@@ -61,6 +62,20 @@ We have set height 500px for cat image and width of 100px for dog image. when we
 
 There are more attributes we can set to `<img>` tags refer to [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Img) for more.
 
+## Captioning images using `<figure>` tag
+
+`<figure>` is a self contained element. For some images like scientific graphs and tables we need cations. by using this `<figure>` tag we can easily add captions to our images
+
+**Eg:**
+
+```HTML
+<figure>
+  <img src="data-graph.png"
+       alt="population density graph">
+  <figcaption>A population density graph</figcaption>
+</figure>
+```
+
 ## `<img>` tag in responsive webdesign
 
 There will be times where we need show different resolution of an image or an entirely different set of images for different screen resolutions and different viewport sizes.
@@ -101,4 +116,20 @@ Along with `srcset` attribute we can also combine this with `size` attribute. In
 
 `<picture>` tag contains zero or more `source` tags and one `image` tag to serve different images for different scenarios.
 
-{{< codepen id="PoRWWOz" >}}
+**Eg:**
+
+```HTML
+<picture>
+  <source
+    media="(max-width: 800px)"
+    srcset="cat-sleeping.png"
+  />
+  <source
+    media="(max-width: 300px)"
+    srcset="cat-potrait.png"
+  />
+  <img src="cat.png" alt="A cat image" />
+</picture>
+```
+
+In this example we are showing two different images at two different break points i.e; 300px and 800px here in first source tag `(max-width: 300px)` means until 300px our browser shows `cat-potrait.png` and then up to `(max-width: 800px)` until 800px our browser shows `cat-sleeping.png` and then when browser breaks above 800px browser defaults to `cat.png`
