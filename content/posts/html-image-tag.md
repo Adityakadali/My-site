@@ -16,7 +16,7 @@ author:
 
 ## Basic usage
 
-On every web page we come across images. Those are placed in HTML using `<img>` tags.
+On every web page we come across images. Those images are placed in HTML using `<img>` tags.
 It is a self closing tag.
 
 ```HTML
