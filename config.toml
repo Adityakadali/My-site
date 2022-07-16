@@ -15,7 +15,7 @@ paginate=4 # articles per page
 	favicon = "https://raw.githubusercontent.com/Adityakadali/My-site/master/resources/_gen/images/favicon.ico"
 	mode="toggle" # color-mode → light,dark,toggle or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
-	subtitle = "A Personal blog page for my self reflection"
+	subtitle = "A Personal blog page"
 
 # Social Tags
 

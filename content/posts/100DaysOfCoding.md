@@ -6,7 +6,6 @@ title: 100DaysofCode
 type:
 - post
 - posts
-weight: 10
 tags:
 - 100DaysOfCode
 - coding

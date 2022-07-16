@@ -7,7 +7,6 @@ title: Migrate to Hugo from Jekyll
 type:
 - post
 - posts
-weight: 10
 series:
 - Hugo 101
 aliases:

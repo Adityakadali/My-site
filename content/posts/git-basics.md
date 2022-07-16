@@ -7,7 +7,6 @@ title: Setting up Git
 type:
 - post
 - posts
-weight: 10
 series:
 - Github 101
 tags:
