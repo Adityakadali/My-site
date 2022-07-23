@@ -1,7 +1,6 @@
 ---
 title: "Markdown Cheatsheet"
 date: 2022-07-23T23:09:07+05:30
-description: ""
 type:
   - posts
   - post

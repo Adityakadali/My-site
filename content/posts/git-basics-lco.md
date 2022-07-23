@@ -1,7 +1,6 @@
 ---
 title: "Learn enough git to be dangerous | Git Basics"
 date: 2022-07-23T22:33:46+05:30
-description: ""
 type:
   - posts
   - post

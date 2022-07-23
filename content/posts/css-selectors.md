@@ -1,7 +1,6 @@
 ---
 title: "CSS Selectors || With code examples"
 date: 2022-07-21T22:36:51+05:30
-description: ""
 type:
   - posts
   - post

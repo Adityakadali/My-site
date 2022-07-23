@@ -1,7 +1,6 @@
 ---
 title: "Positioning Elements"
 date: 2022-07-20T22:39:58+05:30
-description: ""
 type:
   - posts
   - post
